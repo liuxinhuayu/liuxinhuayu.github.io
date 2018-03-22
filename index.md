@@ -20,5 +20,5 @@ layout: post
 参考链接 [Jekyll中文](http://www.jekyll.com.cn/docs/templates/)
 
 ## 好友链接
-[区块人生](https://blocklife.github.io)   群群(https://jiangyaqunqun.github.io)  旭(https://jiaxuhe.github.io)
+[区块人生](https://blocklife.github.io)   [群群](https://jiangyaqunqun.github.io)  [旭](https://jiaxuhe.github.io)
 
