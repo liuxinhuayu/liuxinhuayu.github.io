@@ -22,11 +22,16 @@ mysql默认使用的是3306端口，为了防止防火墙将其关闭，可以�
 在CentOS6或者Redhat6下要开启防火墙 打开3306 端口
 编辑这个文件vim /etc/sysconfig/iptables
 输入
+
     -A INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j ACCEPT   
+
 保存后输入service iptables restart 重启防火墙
 或者直接关闭防火墙，但是不建议
-    /etc/rc.d/init.d/iptables stop
+
+   /etc/rc.d/init.d/iptables stop
+
 ## MySQL自身设置
 ubuntu环境使用apt-get安装的mysql除了上述配置外，还需要修改/etc/mysql/my.cnf文件的bind-address，然后重启mysql
+
     bind-address = 0.0.0.0
 
