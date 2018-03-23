@@ -18,13 +18,13 @@ description: 给mysql配置远程访问用户，并授予权限
 如果这个不行的话直接将%改为你的ip即可
 
 ## 开放3306端口
-
     mysql默认使用的是3306端口，为了防止防火墙将其关闭，可以使用下面方式
-
     在CentOS6或者Redhat6下要开启防火墙 打开3306 端口
     编辑这个文件vim /etc/sysconfig/iptables
     输入
+
     -A INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j ACCEPT
+    
     保存后输入service iptables restart 重启防火墙
 
     或者直接关闭防火墙，但是不建议
