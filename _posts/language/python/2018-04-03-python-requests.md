@@ -3,10 +3,9 @@ layout: post
 title: python-requests库的使用
 category: 编程语言
 tags: python,,requests
-description: 
+description: 使用requests实现对restapi的测试
 ---
 
-# python-requests库使用
 
 笔记摘自 [http://docs.python-requests.org/en/master/](http://docs.python-requests.org/en/master/)
 
