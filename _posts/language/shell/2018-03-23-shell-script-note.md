@@ -1,12 +1,12 @@
 ---
 layout: post
 title: shell脚本
-category: 工具
+category: 编程语言
 tags: [shell]
 description: 记录shell脚本中碰到的一些知识点
 ---
 
-## shell参数
+### shell参数
 
 | 变量 | 描述 |
 | ---  | ---  |
@@ -18,7 +18,7 @@ description: 记录shell脚本中碰到的一些知识点
 |$? | 上一个命令的执行结果，正确时返回0，不正确时返回非0|
 |$$ | 当前进程的pid|
 
-## set使用
+### set使用
 
 碰到错误时退出整个脚本
 
@@ -32,7 +32,7 @@ set -e
 set -x
 ```
 
-## 记录每天磁盘使用情况
+### 记录每天磁盘使用情况
 
 ```
 #!/bin/bash
@@ -41,7 +41,7 @@ logfile=$d.log
 df -h > $logfile
 ```
 
-## 测试多次执行某个命令的结果
+### 测试多次执行某个命令的结果
 
 ```
 function with_retry() {
@@ -70,3 +70,34 @@ function with_retry() {
 #使用示例
 with_retry 3 curl www.baidu.com
 ```
+
+### 删除包含某个进程关键字的进程
+
+```
+ps -ef | grep XXX | grep -v grep | cut -c 9-15 | xargs kill -9
+```
+
+### 循环读取文件内容
+
+使用while实现
+
+```
+cat test.txt |while read line  
+do  
+  echo $line;  
+done  
+```
+
+使用for实现，IFS为行内定义的间隔符合
+
+```
+SAVEIFS=$IFS  
+IFS=$(echo -en "\n")  
+for line in $(cat test.txt)  
+do  
+  echo  $line;  
+done  
+IFS=$SAVEIFS
+```
+
+
