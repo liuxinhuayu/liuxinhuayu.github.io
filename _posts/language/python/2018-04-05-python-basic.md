@@ -76,64 +76,6 @@ False
 * 使用id(x)查看x的内存地址
 * 使用ord('A')求字符A对应的unicode码，chr(65)返回unicode码65对应的字符
 
-## 字符串
-
-打印字符串内容，使用print()函数
-```
-print(*,sep=' ',end='\n')  # 默认print的间隔是空格，结尾是换行符
-```
-
-windows中换行默认是'\r\n'，而linux文件中默认是'\n'，因此在windows中编辑的文件，上传到linux环境时，需要对换行做替换，使用命令
-
-```
-sed ‘s/^M//’ filename > newfile  #注意^M的输入方式是Ctrl+V,Ctrl+M
-```
-字符串的内置函数
-
-```
->>> "abcde".capitalize()  #实现首字母大写
-'Abcde'
->>> "abacad".count('a')  #统计字符串出现的次数
-3
->>> "1a2b3d".find("2")  # 返回字符第一次出现的索引值
-2
->>> "123".join("abc")  #字符串插入
-'a123b123c'
-```
-
-更多字符串的内置函数，通过dir命令查看，
-
-```
->>> dir(str)
-['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '_
-_eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs
-__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__'
-, '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__',
-'__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__'
-, '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'e
-ncode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isal
-num', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric',
- 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstr
-ip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartitio
-n', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase'
-, 'title', 'translate', 'upper', 'zfill']
->>>
->>> help(str.rfind)
-Help on method_descriptor:
-
-rfind(...)
-    S.rfind(sub[, start[, end]]) -> int
-
-    Return the highest index in S where substring sub is found,
-    such that sub is contained within S[start:end].  Optional
-    arguments start and end are interpreted as in slice notation.
-
-    Return -1 on failure.
-
->>>
-
-```
-
 ## python运算符
 
 ![python](/assets/img/2018-04-06-python.jpg)
