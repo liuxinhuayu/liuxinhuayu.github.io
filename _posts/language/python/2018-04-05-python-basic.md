@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python-pip、内置对象、运算符
+title: python-pip、内置对象、运算符、内置函数
 category: 编程语言
 tags: python
 description: 
@@ -105,4 +105,42 @@ TypeError: must be str, not int
 >>> (1,2,3)*3
 (1, 2, 3, 1, 2, 3, 1, 2, 3)
 ```
+
+* 字符串比较大小，按字符位，逐个比较
+
+```
+>>> 'Hello'>'world'
+False
+>>> ord("H")
+72
+>>> ord("w")
+119
+```
+
+* map使用，对后一个参数的元素都使用前面的函数
+
+```
+>>> c = [1,2,3,4]
+>>> d = list(map(str,c))
+>>> d
+['1', '2', '3', '4']
+```
+
+## 内置函数
+
+查看所有的内置函数`dir(__builtins__)`列出的不光有内置函数也有内置对象
+内置函数比较多，需要仔细挨个查看如何使用
+
+![python](/assets/img/2018-04-07-python-function-1.jpg)
+
+![python](/assets/img/2018-04-07-python-function-2.jpg)
+
+![python](/assets/img/2018-04-07-python-function-3.jpg)
+
+![python](/assets/img/2018-04-07-python-function-4.jpg)
+
+![python](/assets/img/2018-04-07-python-function-5.jpg)
+
+![python](/assets/img/2018-04-07-python-function-6.jpg)
+
 
