@@ -129,7 +129,9 @@ False
 ## 内置函数
 
 查看所有的内置函数`dir(__builtins__)`列出的不光有内置函数也有内置对象
-内置函数比较多，需要仔细挨个查看如何使用
+内置函数比较多，需要仔细挨个查看如何使用.
+
+** 查看内置函数的详细用法，可使用help()查看，例如help(print)
 
 ![python](/assets/img/2018-04-07-python-function-1.jpg)
 
@@ -144,3 +146,28 @@ False
 ![python](/assets/img/2018-04-07-python-function-6.jpg)
 
 
+* 数字与字符可直接互换，但是列表与字符串不能互换
+
+```
+>>> str([1,2,3])
+'[1, 2, 3]'
+>>> list(str([1,2,3]))
+['[', '1', ',', ' ', '2', ',', ' ', '3', ']']
+>>>
+>>> eval(str([1,2,3]))
+[1, 2, 3]
+```
+
+* python3中input()不管输入什么，都作为字符串形式赋予变量
+
+* python3中将内容打印到文件的示例，注意关闭文件时，缓存才落到磁盘上
+
+```
+>>> fp=open(r'D:\mytest.txt','a+')
+>>> print('Hello world!',file=fp)
+>>> fp.close()
+```
+
+* 模块导入查询，`import sys;print(sys.modules.items)`,增加模块导入的查询路径在`sys.path`后append要添加的路径
+
+* 模块搜索的顺序：当前文件夹 >> sys.path变量指定的文件夹 >> 优先导入pyc文件
