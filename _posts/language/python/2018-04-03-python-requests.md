@@ -9,6 +9,26 @@ description: 使用requests实现对restapi的测试
 
 笔记摘自 [http://docs.python-requests.org/en/master/](http://docs.python-requests.org/en/master/)
 
+中文链接 [http://docs.python-requests.org/zh_CN/latest/](http://docs.python-requests.org/zh_CN/latest/)
+
+web需求：
+
+* Keep-Alive & 连接池
+* 国际化域名和 URL
+* 带持久 Cookie 的会话
+* 浏览器式的 SSL 认证
+* 自动内容解码
+* 基本/摘要式的身份认证
+* 优雅的 key/value Cookie
+* 自动解压
+* Unicode 响应体
+* HTTP(S) 代理支持
+* 文件分块上传
+* 流下载
+* 连接超时
+* 分块请求
+* 支持 .netrc
+
 ## 快速上手
 
 该部分的指导[链接](http://docs.python-requests.org/zh_CN/latest/user/quickstart.html#id2)
