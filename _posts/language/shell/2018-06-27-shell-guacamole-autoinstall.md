@@ -8,6 +8,9 @@ description: 牛油果用于远程连接的服务
 
 经测试ubuntu16.04上可正常执行
 
+原始地址
+[https://raw.githubusercontent.com/MysticRyuujin/guac-install/master/guac-install.sh](https://raw.githubusercontent.com/MysticRyuujin/guac-install/master/guac-install.sh)
+
 ```
 #!/bin/bash
 

@@ -7,8 +7,6 @@ description:
 ---
 
 
-# Flask系列：HelloWord
-
 ## 创建virtualenv环境
 使用pycharm免费版创建新工程，如图
 
