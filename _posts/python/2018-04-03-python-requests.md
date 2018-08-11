@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python-requests库的使用
-category: 编程语言
+category: python
 tags: python,,requests
 description: 使用requests实现对restapi的测试
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python-requests多进程下载文件
-category: 编程语言
+category: python
 tags: python
 description: 使用进程池下载
 ---

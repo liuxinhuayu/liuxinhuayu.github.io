@@ -1,7 +1,7 @@
 ---
 layout: post
 title: flask-hello world
-category: 编程语言
+category: python
 tags: python
 description: 
 ---
