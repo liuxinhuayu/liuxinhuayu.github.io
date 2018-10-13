@@ -1,7 +1,7 @@
 ---
 layout: post
 title: shell-日志函数
-category: 编程语言
+category: shell
 tags: [shell]
 description: 记录shell脚本中碰到的一些知识点
 ---

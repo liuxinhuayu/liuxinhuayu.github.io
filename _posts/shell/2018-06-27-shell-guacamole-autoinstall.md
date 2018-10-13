@@ -1,7 +1,7 @@
 ---
 layout: post
 title: guacamole自动安装脚本
-category: 编程语言
+category: shell
 tags: [shell]
 description: 牛油果用于远程连接的服务
 ---
