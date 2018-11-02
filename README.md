@@ -1,6 +1,6 @@
 ### 我的博客
 
-地址：[http://haosuwei.github.io](http://haosuwei.github.io)
+地址：[http://liuxinhuayu.github.io](http://liuxinhuayu.github.io)
 
 ### 安装说明
 
